@@ -41,6 +41,7 @@ setup(name='collective.twitter.portlets',
         'setuptools',
         'collective.prettydate>=1.1',
         'collective.twitter.accounts>=1.0.3',
+        'python-twitter>=2.0',
         ],
       extras_require={
         'test': ['plone.app.testing'],

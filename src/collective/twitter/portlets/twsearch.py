@@ -173,7 +173,9 @@ class Renderer(base.Renderer):
             tw = twitter.Api(consumer_key=account.get('consumer_key'),
                              consumer_secret=account.get('consumer_secret'),
                              access_token_key=account.get('oauth_token'),
-                             access_token_secret=account.get('oauth_token_secret'),)
+                             access_token_secret=account.get('oauth_token_secret'),
+                             timeout=10,
+            )
 
             search_str = self.data.search_string
             max_results = self.data.max_results
